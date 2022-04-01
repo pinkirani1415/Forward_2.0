@@ -19,11 +19,11 @@ OWNER=int(Config.OWNER_ID)
 @Client.on_message(filters.command("status"))
 async def count(bot, m):
     if 1 in status:
-        await m.reply_text("Currently Bot is forwarding messages.")
+        await m.reply_text("फ़ॉर्वर्ड कर ही रहा हूँ भोसड़ी के! साले खुद तो कुछ कम करता नहीं बहन चोद।")
     if 2 in status:
-        await m.reply_text("Now Bot is Sleeping")
+        await m.reply_text("मादरचोद सो रहा हूँ मैं! तेरे बाप का नौकर नहीं हूँ जो पूरे दिन कम करता रहूँगा।")
     if 1 not in status and 2 not in status:
-        await m.reply_text("Bot is Idle now, You can start a task.")
+        await m.reply_text("ख़ाली हूँ हरामज़ादे, तेरी तरह कामचोर नहीं हूँ मैं! काम भेज।")
 
 @Client.on_message(filters.command('total'))
 async def total(bot, message):
